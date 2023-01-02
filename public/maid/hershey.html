@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Please say YES!</title>
+
+    <!-- EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("h_xb_QunC34hsvH7W")
+        })();
+    </script>
+    
+    <script type="text/javascript">
+        var emailVar ={
+            name: 'Hershey',
+            position: 'Maid of Honor'
+        };
+
+        function sendMail() {
+            emailjs.send("service_uepmr7m", "template_0ko7eoe",emailVar)
+            console.log("EMAIL SENT");
+        }
+    </script>
+    
+    <!-- EMAILJS -->
+
+<style type="text/css">
+    * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+body{
+    background: url(https://github.com/aaalgieee/wed-invi/blob/main/final/LETTER/MDH.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+button {
+    background: #dba173;
+    border: 2px solid #dba173;
+    color: #fff;
+    position: relative;
+    left: 20%;
+    top: 70%;
+    font-size: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    line-height: 1em;
+    min-width: 300px;
+    max-width: 300px;
+    width: 50%;
+    margin: 10px;
+    cursor: pointer;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+button:hover {
+    background: #fff;
+    border-color: #dba173;
+    color: #dba173;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+        }
+
+
+</style>
+</head>
+
+<body>
+    <section class=confirm
+        <h1></h1>
+    </section>
+
+
+<a class=btn-wrap>
+    <button class="yes", onclick="sendMail(),console.log('EMAIL SENT!'),style.display='none',changebg()">YES</button>
+</a>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+                $('.yes').click(function () {
+                    $('.confirm').html('<h1>❤️Thank you for responding❤️<br/>An Email has been sent to Teffany!<br/>take a screenshot for proof!</h1>');
+                });
+	    });
+</script>
+
+<script>
+    function changebg(){
+        document.querySelector('body').style.background = "#fbf8f5"
+    }
+</script>
+
+</body>
+
+</html>
